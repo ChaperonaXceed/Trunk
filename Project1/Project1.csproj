@@ -59,7 +59,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="..\Utilities\Class1.cs">
+    <Compile Include="..\..\..\..\..\Shared\Dev\Trunk\Utilities\Class1.cs">
       <Link>Class1.cs</Link>
     </Compile>
     <Compile Include="App.xaml.cs">
