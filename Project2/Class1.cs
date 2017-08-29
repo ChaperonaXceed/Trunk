@@ -25,5 +25,13 @@ namespace Utilities
     {
       return value * 2;
     }
+
+    public static double ProvideValue( double value, bool square = false )
+    {
+      if( square )
+        return value * value;
+
+      return ValueProvider.ProvideValue( value );
+    }
   }
 }

@@ -27,6 +27,12 @@ namespace Project2
     }
     private void Button_Click( object sender, RoutedEventArgs e )
     {
+      if( checkBox.IsChecked ?? false )
+      {
+        textBlock.Text = ValueProvider.ProvideValue( double.Parse( textBox.Text ), true ).ToString();
+        return;
+      }
+
       textBlock.Text = ValueProvider.ProvideValue( int.Parse( textBox.Text ), true ).ToString();
     }
   }
