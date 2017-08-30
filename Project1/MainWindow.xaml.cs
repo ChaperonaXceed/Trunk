@@ -28,13 +28,18 @@ namespace Project1
 
     private void Button_Click( object sender, RoutedEventArgs e )
     {
-      if( checkBox.IsChecked ?? false )
+      if( RadioDouble.IsChecked ?? false )
       {
         textBlock.Text = ValueProvider.ProvideValue( double.Parse( textBox.Text ) ).ToString();
-        return;
       }
-
-      textBlock.Text = ValueProvider.ProvideValue( int.Parse( textBox.Text ) ).ToString();
+      else if( RadioDecimal.IsChecked ?? false )
+      {
+        textBlock.Text = ValueProvider.ProvideValue( decimal.Parse( textBox.Text ) ).ToString();
+      }
+      else
+      {
+        textBlock.Text = ValueProvider.ProvideValue( int.Parse( textBox.Text ) ).ToString();
+      }
     }
   }
 }

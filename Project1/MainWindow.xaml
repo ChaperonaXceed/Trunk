@@ -17,9 +17,16 @@
       </Grid.RowDefinitions>
 
       <TextBox x:Name="textBox" />
-      <CheckBox x:Name="checkBox"
-                Grid.Row="1"
-                IsThreeState="False" />
+      <GroupBox Grid.Row="1">
+         <StackPanel>
+            <RadioButton x:Name="RadioInt"
+                         Content="Int" />
+            <RadioButton x:Name="RadioDouble"
+                         Content="Double" />
+            <RadioButton x:Name="RadioDecimal"
+                         Content="Deciaml" />
+         </StackPanel>
+      </GroupBox>
       <Button Grid.Row="2"
               Content="Get value"
               Click="Button_Click" />
